@@ -1,62 +1,207 @@
-<!doctype html>
+<!DOCTYPE HTML>
+
+<!--
+	Astral 1.0 by HTML5 Up!
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Angiloth.github.com by angiloth</title>
+	<head>
+		<title>ChristopherJosephDean</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="technical artist, programmer, 3D modeler, animator, motion graphics, video editing, interaction design, UX design, independent game developer" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!-- these are necessary javascripts and css files -->
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="css/5grid/init.js?use=mobile,desktop"></script>
+		<script src="js/jquery.formerize-1.1.js"></script>
+		<script src="js/init.js"></script>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="without-description">
-        <h1>Angiloth.github.com</h1>
-        <p></p>
-        <p class="view"><a href="https://github.com/angiloth">View the Project on GitHub <small>angiloth</small></a></p>
-        <ul>
-          <li class="single"><a href="">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
+<!-- this script is for toggling links/pictures with hide-away-text -->
+		<script type="text/javascript">
+      		function toggleDiv(divId)
+      			{
+        			$("#"+divId).toggle();
+      			}
+    	</script>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<!-- this style is for instantiating hide-away-text to hidden -->
+	    <style>
+			#one {display: none;}
+			#two {display: none;}
+			#three {display: none;}
+			#four {display: none;}
+			#five {display: none;}
+			#six {display: none;}
+		</style>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<!-- these are necessary css files - especially for the layout and resizing -->
+		<noscript>
+			<link rel="stylesheet" href="css/5grid/core.css" />
+			<link rel="stylesheet" href="css/5grid/core-desktop.css" />
+			<link rel="stylesheet" href="css/5grid/core-1200px.css" />
+			<link rel="stylesheet" href="css/5grid/core-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/noscript.css" />
+		</noscript>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
 
-<h3>Designer Templates</h3>
+		<!-- Wrapper; the following begins the entire page -->
+			<div id="wrapper">
+				
+				<!-- Navigation; hashtags define sections, reference a hashtag to jump to it. Add/Remove as needed. Find extra icon possibilities in the /css/style.css ~ line 422. target="_blank" opens in a new tab. -->
+					<nav id="nav">
+						<a href="#me" class="icon icon-user active"><span>Me</span></a>
+						<a href="#work" class="icon icon-tilemenu"><span>Portfolio</span></a>
+						<a href="#contact" class="icon icon-mail"><span>Contact Me</span></a>
+						<a href="http://www.linkedin.com/pub/christopher-dean/5a/17a/920" target="_blank" class="icon icon-linkedin"><span>LinkedIn</span></a>
+					</nav>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+				<!-- Main -->
+					<div id="main">
+						
+						<!-- Me; this is the first page on the website -->
+							<article id="me" class="panel">
+								<header>
+									<h1>Christopher Dean</h1>
+									<span class="byline"><ul>
+										<li>Visual Media Artist</li>
+										<li>Designer</li>
+										<li>Programmer</li>
+									</ul></span>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="jumplink arrow icon icon-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
 
-<h3>Rather Drive Stick?</h3>
+						<!-- Work; this is where you'll put all your portfolio stuff --> 
+							<article id="work" class="panel">
+								<header>
+									<h2>Work</h2>
+								</header>
+								<p>
+									A collection of my artistic work.
+								</p>
+								<section class="5grid is-gallery">
+									<div class="row">
+										<div class="4u">
+											<a href="javascript:toggleDiv('one');"><img src="images/1.jpg" alt=""></a>
+											<div id="one">This is magic!</div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+										</div>
+										<div class="4u">
+											<a href="javascript:toggleDiv('two');"><img src="images/1.jpg" alt=""></a>
+											<div id="two">Look at me go!</div>
 
-<h3>Authors and Contributors</h3>
+										</div>
+										<div class="4u">
+											<a href="javascript:toggleDiv('three');"><img src="images/1.jpg" alt=""></a>
+											<div id="three">You can make sentences as long as you need to.</div>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="4u">
+											<a href="javascript:toggleDiv('four');"><img src="images/1.jpg" alt=""></a>
+											<div id="four">Let's talk about how awesome your girlfriend may be.</div>
 
-<h3>Support or Contact</h3>
+										</div>
+										<div class="4u">
+											<a href="javascript:toggleDiv('five');"><img src="images/1.jpg" alt=""></a>
+											<div id="five">My hair is brown. You hair is blonde.</div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-    <footer>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+										</div>
+										<div class="4u">
+											<a href="javascript:toggleDiv('six');"><img src="images/1.jpg" alt=""></a>
+											<div id="six">Diana and Chris!</div>
+
+										</div>
+									</div>
+								</section>
+							</article>
+					
+						<!-- Email -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Email Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div class="5grid">
+										<div class="row">
+											<div class="6u">
+												<input type="text" class="text" name="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" class="text" name="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="text" class="text" name="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<textarea name="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="submit" class="button" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+		
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="links">
+							<li>&copy; ChristopherJosephDean</li>
+							<li>Template Design : <a href="http://html5up.net/">HTML5 Up!</a></li>
+						</ul>
+					</div>
+			</div>
+<!--   
+	<script src="js/jquery.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script>
+      (function($){
+        
+        //cache nav
+        var nav = $("#nav");
+        
+        //add indicator and hovers to submenu parents
+        nav.find("li").each(function() {
+          if ($(this).find("ul").length > 0) {
+            $("<span>").text("^").appendTo($(this).children(":first"));
+
+            //show subnav on hover
+            $(this).mouseenter(function() {
+              $(this).find("ul").stop(true, true).slideDown();
+            });
+            
+            //hide submenus on exit
+            $(this).mouseleave(function() {
+              $(this).find("ul").stop(true, true).slideUp();
+            });
+          }
+        });
+      })(jQuery);
+    </script>
+-->
+	</body>
 </html>
