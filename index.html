@@ -22,23 +22,27 @@
 		<script src="js/jquery.formerize-1.1.js"></script>
 		<script src="js/init.js"></script>
 
-<!-- this script is for toggling links/pictures with hide-away-text -->
-		<script type="text/javascript">
-      		function toggleDiv(divId)
-      			{
-        			$("#"+divId).toggle();
-      			}
-    	</script>
-
-<!-- this style is for instantiating hide-away-text to hidden -->
-	    <style>
-			#one {display: none;}
-			#two {display: none;}
-			#three {display: none;}
-			#four {display: none;}
-			#five {display: none;}
-			#six {display: none;}
-		</style>
+<!-- this style is for opacity of pictures and for toggling links/pictures with hide-away-text -->
+    <style>
+    img
+      {
+        opacity:1.0;
+        filter:alpha(opacity=100); /* For IE8 and earlier */
+      }
+    img:hover
+      {
+        opacity:0.4;
+        filter:alpha(opacity=40); /* For IE8 and earlier */
+      }
+    .accordion > div 
+      {
+          display:none;
+      }
+    .accordion:hover > div
+      {
+          display:block;
+      }
+    </style>
 
 <!-- these are necessary css files - especially for the layout and resizing -->
 		<noscript>
@@ -58,7 +62,7 @@
 		<!-- Wrapper; the following begins the entire page -->
 			<div id="wrapper">
 				
-				<!-- Navigation; hashtags define sections, reference a hashtag to jump to it. Add/Remove as needed. Find extra icon possibilities in the /css/style.css ~ line 422. target="_blank" opens in a new tab. -->
+				<!-- Navigation; hashtags define sections, reference a hashtag to jump to it. Add/Remove sections as needed. Find extra icon possibilities in the /css/style.css ~ line 422. target="_blank" opens in a new tab. -->
 					<nav id="nav">
 						<a href="#me" class="icon icon-user active"><span>Me</span></a>
 						<a href="#work" class="icon icon-tilemenu"><span>Portfolio</span></a>
@@ -69,7 +73,7 @@
 				<!-- Main -->
 					<div id="main">
 						
-						<!-- Me; this is the first page on the website -->
+						<!-- Me; this is the first page on the website. byline is in /css/style.css ~ line 370 -->
 							<article id="me" class="panel">
 								<header>
 									<h1>Christopher Dean</h1>
@@ -171,7 +175,7 @@
 					<div id="footer">
 						<ul class="links">
 							<li>&copy; ChristopherJosephDean</li>
-							<li>Template Design : <a href="http://html5up.net/">HTML5 Up!</a></li>
+							<li>Template Design Credits: <a href="http://html5up.net/">HTML5 Up!</a></li>
 						</ul>
 					</div>
 			</div>
