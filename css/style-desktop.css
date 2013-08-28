@@ -1,5 +1,5 @@
 /*
-	Astral 1.0 by HTML5 Up!
+	Astral 2.1 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -134,6 +134,11 @@
 			opacity: 0.35;
 			outline: 0;
 		}
+
+			#nav a:before
+			{
+				font-size: 0.8em;
+			}
 
 			#nav a:after
 			{
@@ -280,7 +285,7 @@
 					#me .pic .arrow span
 					{
 						display: block;
-						text-indent: -9999em;
+						text-indent: -9999px;
 					}
 				
 					#me .pic:hover .arrow
