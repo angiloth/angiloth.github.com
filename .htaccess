@@ -1,7 +1,6 @@
 # BEGIN Expire headers
 ExpiresActive On
 ExpiresDefault "access plus 1 day"
-ExpiresByType image/jpeg "access plus 1 day"
 ExpiresByType image/jpg "access plus 1 day"
 ExpiresByType image/png "access plus 1 day"
 ExpiresByType text/css "access plus 1 day"
